@@ -13,6 +13,7 @@ services:
     volumes:
       - hadoop-master-data:/usr/local/hadoop
       - ./src:/usr/local/hadoop/src
+      - ./data:/usr/local/hadoop/data
     networks:
       - hadoop
 
@@ -25,6 +26,7 @@ services:
     volumes:
       - hadoop-slave1-data:/usr/local/hadoop
       - ./src:/usr/local/hadoop/src
+      - ./data:/usr/local/hadoop/data
     networks:
       - hadoop
 
@@ -37,6 +39,7 @@ services:
     volumes:
       - hadoop-slave2-data:/usr/local/hadoop
       - ./src:/usr/local/hadoop/src
+      - ./data:/usr/local/hadoop/data
     networks:
       - hadoop
 
@@ -49,6 +52,7 @@ services:
     volumes:
       - hadoop-slave3-data:/usr/local/hadoop
       - ./src:/usr/local/hadoop/src
+      - ./data:/usr/local/hadoop/data
     networks:
       - hadoop
 
